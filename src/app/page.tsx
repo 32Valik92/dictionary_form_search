@@ -1,10 +1,11 @@
-import styles from "./page.module.css";
+import React from "react";
+import {TestComponent} from "@/components";
 
-export default function Home() {
+
+export default function HomePage() {
    return (
-      <div className={styles.page}>
-         <main className={styles.main}></main>
-         <footer className={styles.footer}></footer>
+      <div>
+         <TestComponent/>
       </div>
    );
 }
