@@ -2,20 +2,18 @@ import type {Metadata} from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-   title: "",
+   title: "Result page",
    description: "",
 };
 
 type PropType = { children: React.ReactNode }
 
-const qweLayout = ({children}: PropType) => {
+const ResultLayout = ({children}: PropType) => {
    return (
       <div>
-         <p>qwe layout</p>
          {children}
-         <p>qwe layout</p>
       </div>
    );
 };
 
-export default qweLayout;
+export default ResultLayout;
