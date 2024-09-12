@@ -1,3 +1,5 @@
+import "./page.css";
+
 import type {Metadata} from "next";
 import React from "react";
 
@@ -10,7 +12,7 @@ type PropType = { children: React.ReactNode }
 
 const ResultLayout = ({children}: PropType) => {
    return (
-      <div>
+      <div className={"result-layout"}>
          {children}
       </div>
    );

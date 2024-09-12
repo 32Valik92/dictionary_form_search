@@ -1,4 +1,7 @@
 "use client";
+import "./DynamicFormComponent.css";
+import "@/css/common.css";
+
 import {useRouter} from "next/navigation";
 import {SubmitHandler, useForm} from "react-hook-form";
 
@@ -12,28 +15,42 @@ const DynamicFormComponent = () => {
 
    const {
       register,
-      handleSubmit
+      handleSubmit,
+      watch,
    } = useForm<FormData>();
 
    const search: SubmitHandler<FormData> = ({word, criterion}) => {
       router.push(`/${word}/${criterion}`);
    };
 
+   const wordInput = watch("word");
+
    return (
-      <form onSubmit={handleSubmit(search)}>
-         <input type="text" placeholder="Input for Criterion 1" {...register("word")}/>
+      <div className={"form-title-container mulish-mulish"}>
+         <div className={"form-title"}>Welcome to words API</div>
+         <div className={"form-container"}>
+            <form onSubmit={handleSubmit(search)} className={"form-container-search-form"}>
+               <input type="text" placeholder="Write a search word..." {...register("word")}
+                  className={"mulish-mulish"}/>
 
-         <select {...register("criterion")}>
-            <option value="antonyms">antonyms</option>
-            <option value="definitions">definitions</option>
-            <option value="examples">examples</option>
-            <option value="rhymes">rhymes</option>
-            <option value="syllables">syllables</option>
-            <option value="synonyms">synonyms</option>
-         </select>
+               <select {...register("criterion")} className={"mulish-mulish"}>
+                  <option value="antonyms">Antonyms</option>
+                  <option value="definitions">Definitions</option>
+                  <option value="examples">Examples</option>
+                  <option value="rhymes">Rhymes</option>
+                  <option value="syllables">Syllables</option>
+                  <option value="synonyms">Synonyms</option>
+               </select>
 
-         <button type="submit">Submit</button>
-      </form>
+               <button
+                  type="submit"
+                  className={"search-button mulish-mulish"}
+                  disabled={!wordInput}
+               >Search
+               </button>
+            </form>
+         </div>
+      </div>
    );
 };
 

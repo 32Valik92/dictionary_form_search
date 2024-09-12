@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* -------- fonts -------- */
+.mulish-mulish {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.unlock-regular {
+    font-family: "Unlock", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* -------- end fonts -------- */
+
+/* ---------------------- for result criterion ---------------------- */
+.component-div {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    padding: 50px;
+    background-color: rgba(211, 211, 211, 0.85);
+    font-size: 25px;
+}
+
+.header-criterion {
+    font-size: 35px;
+    margin-bottom: 10px;
+    border-bottom: 2px black solid;
+}
+
+.search-word-span {
+    font-weight: 600;
+}
+
+.criterion-result {
+    display: flex;
+    flex-direction: column;
+}
+
+.criterion-result-item {
+    /*width: max-content;*/
+    margin-bottom: 10px;
+}
+
+/* ---------------------- end for result criterion ---------------------- */

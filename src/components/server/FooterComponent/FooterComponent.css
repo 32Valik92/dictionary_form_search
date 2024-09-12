@@ -1,0 +1,48 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.5);
+    text-align: center;
+    gap: 20px;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    color: black;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon-container img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.icon-container img:hover {
+    transform: scale(1.2);
+}
+
+.icon-container > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
