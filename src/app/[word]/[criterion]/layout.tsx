@@ -18,4 +18,5 @@ const ResultLayout = ({children}: PropType) => {
    );
 };
 
+
 export default ResultLayout;
