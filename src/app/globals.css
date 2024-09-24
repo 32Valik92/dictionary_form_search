@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url("../assets/background.jpg");
+    background-image: url("../assets/Background.jpg");
     background-size: cover; /* Масштабує зображення, щоб покрити всю область */
     background-position: center; /* Центрує зображення по горизонталі та вертикалі */
     background-repeat: no-repeat; /* Вимикає повторення зображення */
